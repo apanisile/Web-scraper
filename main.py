@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import json
 
 url = 'http://ethans_fake_twitter_site.surge.sh/'
 response = requests.get(url, timeout=5)
