@@ -10,8 +10,10 @@ tweettArr = []
 for tweet in content.findAll('div', attrs={"class": "tweetcontainer"}):
     tweetObject = {
         "author": tweet.find('h2', attrs={"class": "author"}),
-        "tweet": tweet.find('p', attrs={"class": "content"})
+        "tweet": tweet.find('p', attrs={"class": "content"}),
+        "dateTime": tweet.find('h5', attrs={"class": "dateTime"})
     }
+
     print(tweetObject)
 
 
